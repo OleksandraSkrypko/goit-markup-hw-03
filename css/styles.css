@@ -17,6 +17,11 @@
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+
+        padding: 24px 156px;
+            display: flex;
+                align-items: left;
+                margin-right: 447px;
         
 }
 
@@ -27,6 +32,8 @@
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: flex;
+        align-items: center;
 }
 .link {
     text-decoration: none;
@@ -210,6 +217,8 @@ color: #4D5AE5;
 .list {
     list-style: none;
 }
+
+/*Portfolio html*/
 .body {
     font-family: "Roboto", sans-serif;
     color:#434455;
@@ -283,4 +292,48 @@ color: #4D5AE5;
 }
 .portfolio-studio{
     color: #f4f4fd;
+}
+
+/*Home work 3*/
+/* Загальні стилі */
+html {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
 }
