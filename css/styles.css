@@ -11,10 +11,40 @@
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: var(--main-color);
+    letter-spacing: 0.02em;
+    
 }
 /* Reset */
+/* Reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
 
+img {
+    display: block;
+}
 
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+.conteiner{
+    width: 1158px;
+    padding: 0 15px 0 15px;
+    margin: 0;
+}
 
 
 /**
@@ -23,9 +53,11 @@
   |============================
 */
 .header {
-    width: 1440px;
-     height: 72px;
-      border: 1px;
+    padding: 24px 0;
+    border-bottom: 1px solid #e7e9fc;
+    background-color: white,#fff;
+    width: 1158px;
+    margin: auto;
 }
 
 .header-container {
@@ -36,7 +68,7 @@
 
 .header-nav {
     display: flex;
-        justify-content: space-between;
+        padding: 24px 0;
         align-items: center;
 }
 
@@ -48,6 +80,9 @@ color: #4D5AE5;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin-right: 76px;
    
 
     padding: 24px 156px;
@@ -59,8 +94,11 @@ color: #4D5AE5;
 }
 
 .header-list {
-    list-style: none;
+
     display: flex;
+    align-items:center;
+    gap: 40px;
+    padding: 24px 0;
 }
 
 
@@ -278,7 +316,10 @@ background-color: #2e2f42;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2e2f42;}
+    color: #2e2f42;
+    padding: 32px 16px;
+        text-align: center;
+}
 
 .team-text {
     font-size: 16px;
@@ -292,9 +333,12 @@ background-color: #2e2f42;
 
 .footer {
     background-color: #2e2f42;
+    padding: 100px 0;
 }
 
 .footer-logo {
+    display: inline-block;
+        margin-bottom: 16px;
     color: #4D5AE5;
         font-family: "Raleway", sans-serif;
         font-size: 18px;
@@ -319,16 +363,19 @@ color: #f4f4fd;
 color: #F4F4FD;
     font-family: Roboto;
     font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
     letter-spacing: 0.02em;
-    text-align: left;
+    max-width: 264px;
 }
 .footer-logo link {
-    text-decoration: none
+    text-decoration: none;
+
+
 }
 .list {
     list-style: none;
+}
+.footer-conteiner {
+    align-items: flex-start;
 }
 /**
   |============================
