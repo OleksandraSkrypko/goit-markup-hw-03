@@ -54,23 +54,25 @@ a {
   | Header styles
   |============================
 */
+
 .header {
-    padding: 24px 0;
-    border-bottom: 1px solid #e7e9fc;
-    background-color: white,#fff;
-    width: 1440px;
-    height: 72px;
-    margin: auto;
+        padding: 24px 0;
+        border-bottom: 1px solid #e7e9fc;
+        background-color: white;
+    }
 
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
-
-
-
 .header-nav {
 
-        padding: 24px 0;
         display: flex;
-        align-items: center;
+            align-items: center;
 
 }
 
@@ -88,32 +90,39 @@ display: inline-block;
 }
 
 .studio {
-    color: #2E2F42;
-        font-family: "Raleway",
-            sans-serif;
-        font-size: 18px;
-        font-weight: 800;
-        line-height: 1.17em;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
+color: #2E2F42;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.17em;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 
 }
+
+
 
 .header-list {
-
-    display:flex;
-    align-items:center;
-
-    padding: 24px 0;
-    width:261px;
-    height:24px;
-     top: 24px;
-      left: 347px; 
+    display: flex;
     gap: 40px;
-    justify-content: flex-start;
-
-    
 }
+
+.address {
+    display: flex;
+    gap: 40px;
+}
+
+
+.header-link {
+    padding: 24px 0;
+}
+
+
+.header-networks {
+    display: flex;
+    gap: 40px;
+}
+
 
 
 .link {
@@ -137,50 +146,34 @@ display: inline-block;
 .link:focus {
     color: #404bbf;
 }
-.address {
-    font-style: normal;
-
-    display: flex;
-        align-items: center;
-        margin-top: 10px;
-}
-
-.header-networks {
-    width: 153px;
-     height: 24px;
-     top: 24px;
-      left: 940px;
-}
 
 .header-networks-item {
     color: #434455;
-        font-family: Roboto;
+        font-family: Roboto, sans-serif;
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;
         letter-spacing: 0.02em;
         text-align: left;
-
         text-decoration: none;
-            margin-right: 10px;
+        margin-right: 10px;
 }
 
 .header-networks-link {
     color: #434455;
-        font-family: Roboto;
+        font-family: Roboto, sans-serif;
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;
         letter-spacing: 0.02em;
         text-align: left;
-    
         text-decoration: none;
         margin-right: 10px;
-        width: 153px ;
+        width: 153px;
         height: 24px;
-         top: 24px;
-          left: 940px;
-        flex-direction:row;
+        top: 24px;
+        left: 940px;
+        flex-direction: row;
 }
                         
 .header-networks-link:hover {
@@ -195,60 +188,79 @@ display: inline-block;
   | Hero styles
   |============================
 */
-
 .hero {
-background-color: #2e2f42;
-    padding: 60px 0;
-    width: 1440px;
-    height: 600px;
-    top:72px;
-   
+    
+    background-color: #2e2f42;
+    padding: 188px 0;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
-.hero-title {
-    color: #FFFFFF;
-        font-family: Roboto;
-            font-size: 56px;
-            font-weight: 700;
-            line-height: 60px;
-            letter-spacing: 0.02em;
-            text-align: center;
-    
-    
-        margin-bottom: 20px;
-        text-align: center;
-
-            
+.hero-controls {
+    text-align: center;
 }
 
 .btn {
-    background-color: #4D5AE5;
-        color: #FFFFFF;
-        font-family: "Roboto", sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 24px;
-        letter-spacing: 0.04em;
-        text-align: left;
-        cursor: pointer;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    background-color: #4d5ae5;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 56px;
+    text-decoration: none;
     
-
 }
+
+.btn.accent-btn {
+    background-color: #4d5ae5;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: 0.8;
+}
+
+.hero-title {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    max-width: 496px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 /**
   |============================
   | Advantages styles
   |============================
 */
 
-.advantages {}
+.advantages {
+    padding: 120px 0;
+}
 
 .advantages-list {
     display: flex;
-        align-items: center;
+        gap: 24px;
 }
 
-.advantages-item {}
+.advantages-item {
+    width: calc((100% - 72px) / 4);
+}
 
 .advantages-item-title {
     color: #2E2F42;
@@ -276,7 +288,9 @@ background-color: #2e2f42;
   |============================
 */
 
-.doing {}
+.doing {
+    padding-bottom: 120px;
+}
 
 .doing-title {
     color: #2E2F42;
@@ -287,16 +301,19 @@ background-color: #2e2f42;
         letter-spacing: 0.02em;
         text-align: center;
         text-transform: capitalize;
+        
 }
 
-.title {}
+.title {margin-bottom: 72px;}
 
 .doing-list {
     display: flex;
-        align-items: center;
+        gap: 24px;
 }
 
-.doing-item {}
+.doing-item {
+    width: calc((100% - 48px) / 3);
+}
 
 .doing-img {}
 /**
@@ -306,6 +323,7 @@ background-color: #2e2f42;
 */
 .section-team {
     background-color: #F4F4FD;
+    padding: 120px 0;
 }
 
 .team-title {
@@ -315,22 +333,28 @@ background-color: #2e2f42;
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: #2e2f42;
+        margin-bottom: 72px;
 }
 
 .team-list {
     display: flex;
-        align-items: center;
+        gap: 24px;
 
 }
 
 .team-item {
     background-color: #FFFFFF;
         list-style: none;
+        width: calc((100% - 72px) / 4);
 }
 
-.team-member {}
+.team-member-text {
+    text-align: center;
+}
 
-.team-member-img {}
+.team-member-img {
+    
+}
 
 .team-member-name {
     background-color: #FFFFFF;
@@ -341,6 +365,9 @@ background-color: #2e2f42;
     color: #2e2f42;
     padding: 32px 16px;
         text-align: center;
+        margin-top: 16px;
+            margin-bottom: 8px;
+            font-weight: bold;
 }
 
 .team-text {
@@ -348,8 +375,8 @@ background-color: #2e2f42;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
+    margin-bottom: 16px;
     
-        margin-bottom: 40px;
         text-align: center;
 }
 
@@ -405,28 +432,46 @@ color: #F4F4FD;
   |============================
 */
 
-.body {
-    font-family: "Roboto", sans-serif;
-    color: #434455;
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
 
-.header-nav-list{
+.header>div.container {
+    display: flex;
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header-nav-list {
     display: flex;
     align-items: center;
 }
 
-}
-.header-list{
-
-display: flex;
-align-items: center;
+.header-logo {
+    margin-right: 76px;
 }
 
-
-
-.list{
+.header-list {
     display: flex;
-        align-items: center;
-        
+    gap: 40px;
+}
+
+.link-nav-link {
+    padding: 24px 0;
+}
+
+.address {
+    display: flex;
+    gap: 40px;
+}
+
+.header-contacts-item:last-child {
+    margin-right: 0;
+}
+
+.section-main {
+    padding: 96px 0 120px 0;
 }
 .services-list{
     display: flex;
@@ -439,6 +484,34 @@ align-items: center;
     flex: 0 0 360px;
         margin: 20px;
         border-bottom: 1px;
+        list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 24px;
+            row-gap: 48px;
+            margin-bottom: 72px;
+}
+
+.list li {
+    margin-right: 24px;
+    margin-bottom: 48px;
+}
+
+
+.list li:first-child {
+    width: calc((100% - 48px) / 3);
+}
+
+
+.list li:first-child .container {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+
+.list li:first-child .container h2 {
+    margin-bottom: 8px;
 }
 .link{
     display: block;
@@ -454,17 +527,25 @@ align-items: center;
         cursor: pointer;
         color: #4D5AE5;
         background-color: #F4F4FD;
+
+        padding: 12px 24px;
+            border: 1px solid #e7e9fc;
+            border-radius: 4px;
+            
 }
 .portfolio-btn:hover {
     color: #FFFFFF;
     background-color: #404BBF;
+    border: 1px solid transparent;
 }
 
 .portfolio-btn:focus {
     color: #FFFFFF;
     background-color: #404BBF;
+    border: 1px solid transparent;
 }
-.services-list {list-style-type: none;}
+.services-list {list-style-type: none;
+}
 
 .services-item-title {
     font-weight: 500;
