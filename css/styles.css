@@ -87,6 +87,7 @@ display: inline-block;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
+    
 }
 
 .studio {
@@ -97,7 +98,7 @@ color: #2E2F42;
     line-height: 1.17em;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
+margin-right: 76px
 }
 
 
@@ -464,7 +465,7 @@ color: #F4F4FD;
 }
 
 .services-item {
-    
+    margin-right: 24px;
 }
 
 .link {
@@ -479,6 +480,7 @@ color: #F4F4FD;
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
+    
 }
 
 .services-item-title {
