@@ -17,127 +17,156 @@
 
 <body class="body">
     <!--Header section-->
-    <header class="header">
-        <nav class="header-nav-list">
-            <a class="header-logo link" href="./index.html">Web
-                <span class="studio">Studio</span>
-            </a>
-    
-            <ul class="header-list">
-                <li>
-                    <a href="./index.html" class="link-nav-link">Studio</a>
-                </li>
-                <li>
-                    <a href="./portfolio.html" class="link-nav-link">Portfolio</a>
-                </li>
-                <li>
-                    <a href="" class="link-nav-link">Contacts</a>
-                </li>
-            </ul>
-        </nav>
-        <address class="address">
-            <ul class="header-contacts list">
-                <li class="header-contacts-item">
-                    <a class="header-contacts-info link" href="info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li class="header-contacts-item">
-                    <a class="header-contacts-info link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-                </li>
-            </ul>
-        </address>
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="header-nav">
+                <a class="header-logo link" href="./index.html">Web
+                    <span class="studio">Studio</span>
+                </a>
+                <ul class="header-list">
+                    <li>
+                        <a class="header-link" href="./index.html">Studio</a>
+                    </li>
+                    <li>
+                        <a class="header-link" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="header-link" href="">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <address class="address">
+                <ul class="header-networks">
+                    <li class="header-networks-item">
+                        <a class="header-networks-link" href="info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="header-networks-item">
+                        <a class="header-networks-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
     </header>
 
     <main class="main-portfolio">
-<div class="container">
-        <section class="section-main">
-
-            <h1 hidden>Services</h1>
-            <ul class="services-list">
-                <li><button class="portfolio-btn " type="button">All</button></li>
-                <li><button class="portfolio-btn" type="button">Web Site</button></li>
-                <li><button class="portfolio-btn" type="button">App</button></li>
-                <li><button class="portfolio-btn" type="button">Design</button></li>
-                <li><button class="portfolio-btn" type="button">Marketing</button></li>
-            </ul>
-
-
-
-            <ul class="services-list list">
-                <li class="services-item link">
-                    <a href="#" class="link">
-                        <img src="./images/portfolio/bankingapp.jpg" alt="Banking App Interface Concept" width="360">
-                        <h2 class="services-item-title">Banking App Interface Concept</h2>
-                        <p class="services-text">App</p>
-                    </a>
-                </li>
-                <li class="services-item">
-                    <a href="#" class="link">
-                        <img src="./images/portfolio/payment.jpg" alt="Cashless Payment" width="360">
-                        <h2 class="services-item-title">Cashless Payment</h2>
-                        <p class="services-text">Marketing</p>
-                    </a>
-                </li>
-                <li class="services-item">
-                    <a href="#" class="link">
-                        <img src="./images/portfolio/meditation.jpg" alt="Meditation App" width="360">
-                        <h2 class="services-item-title">Meditation App</h2>
-                        <p class="services-text">App</p>
-                    </a>
-                </li>
-                <li class="services-item">
-                    <a href="#" class="link">
-                        <img src="./images/portfolio/taxiservice.jpg" alt="Taxi Service" width="360">
-                        <h2 class="services-item-title">Taxi Service</h2>
-                        <p class="services-text">Marketing</p>
-                    </a>
-                </li>
-                <li class="services-item">
-                    <a href="#" class="link">
-                        <img src="./images/portfolio/screenillustrations.jpg" alt="Screen Illustrations" width="360">
-                        <h2 class="services-item-title">Screen Illustrations</h2>
-                        <p class="services-text">Design</p>
-                    </a>
-                </li>
-                <li class="services-item">
-                    <a href="#" class="link">
-                        <img src="./images/portfolio/onlinecourses.jpg" alt="Online Courses" width="360">
-                        <h2 class="services-item-title">Online Courses</h2>
-                        <p class="services-text">Marketing</p>
-                    </a>
-                </li>
-                <li class="services-item">
-                    <a href="#" class="link">
-                        <img src="./images/portfolio/instagramstories.jpg" alt="Instagram Stories Concept" width="360">
-                        <h2 class="services-item-title">Instagram Stories Concept</h2>
-                        <p class="services-text">Design</p>
-                    </a>
-                </li>
-                <li class="services-item">
-                    <a href="#" class="link">
-                        <img src="./images/portfolio/organicfood.jpg" alt="Organic Food" width="360">
-                        <h2 class="services-item-title">Organic Food</h2>
-                        <p class="services-text">Web Site</p>
-                    </a>
-                </li>
-                <li class="services-item">
-                    <a href="#" class="link">
-                        <img src="./images/portfolio/freshcoffe.jpg" alt="Fresh Coffee" width="360">
-                        <h2 class="services-item-title">Fresh Coffee</h2>
-                        <p class="services-text">Web Site</p>
-                    </a>
-                </li>
-            </ul>
-        </section>
-</div>
+        <div class="container">
+            <section class="section-main" style="padding: 96px 0 120px 0;">
+                <h1 class="visually-hidden">Services</h1>
+                <ul class="services-list">
+                    <li><button class="portfolio-btn" type="button">All</button></li>
+                    <li><button class="portfolio-btn" type="button">Web Site</button></li>
+                    <li><button class="portfolio-btn" type="button">App</button></li>
+                    <li><button class="portfolio-btn" type="button">Design</button></li>
+                    <li><button class="portfolio-btn" type="button">Marketing</button></li>
+                </ul>
+    
+                <ul class="services-list list"
+                    style="display: flex; justify-content: center; gap: 24px; margin-bottom: 72px;">
+                    <li class="services-item link" style="margin-right: 24px;">
+                        <a href="#" class="link">
+                            <img src="./images/portfolio/bankingapp.jpg" alt="Banking App Interface Concept" width="360">
+                            <div class="services-item-container"
+                                style="padding: 32px 16px; border: 1px solid #e7e9fc; border-top: none;">
+                                <h2 class="services-item-title" style="margin-bottom: 8px;">Banking App Interface Concept
+                                </h2>
+                                <p class="services-text">App</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="services-item" style="margin-right: 24px;">
+                        <a href="#" class="link">
+                            <img src="./images/portfolio/payment.jpg" alt="Cashless Payment" width="360">
+                            <div class="services-item-container"
+                                style="padding: 32px 16px; border: 1px solid #e7e9fc; border-top: none;">
+                                <h2 class="services-item-title" style="margin-bottom: 8px;">Cashless Payment</h2>
+                                <p class="services-text">Marketing</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="services-item" style="margin-right: 24px;">
+                        <a href="#" class="link">
+                            <img src="./images/portfolio/meditation.jpg" alt="Meditation App" width="360">
+                            <div class="services-item-container"
+                                style="padding: 32px 16px; border: 1px solid #e7e9fc; border-top: none;">
+                                <h2 class="services-item-title" style="margin-bottom: 8px;">Meditation App</h2>
+                                <p class="services-text">App</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="services-item" style="margin-right: 24px;">
+                        <a href="#" class="link">
+                            <img src="./images/portfolio/taxiservice.jpg" alt="Taxi Service" width="360">
+                            <div class="services-item-container"
+                                style="padding: 32px 16px; border: 1px solid #e7e9fc; border-top: none;">
+                                <h2 class="services-item-title" style="margin-bottom: 8px;">Taxi Service</h2>
+                                <p class="services-text">Marketing</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="services-item" style="margin-right: 24px;">
+                        <a href="#" class="link">
+                            <img src="./images/portfolio/screenillustrations.jpg" alt="Screen Illustrations" width="360">
+                            <div class="services-item-container"
+                                style="padding: 32px 16px; border: 1px solid #e7e9fc; border-top: none;">
+                                <h2 class="services-item-title" style="margin-bottom: 8px;">Screen Illustrations</h2>
+                                <p class="services-text">Design</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="services-item" style="margin-right: 24px;">
+                        <a href="#" class="link">
+                            <img src="./images/portfolio/onlinecourses.jpg" alt="Online Courses" width="360">
+                            <div class="services-item-container"
+                                style="padding: 32px 16px; border: 1px solid #e7e9fc; border-top: none;">
+                                <h2 class="services-item-title" style="margin-bottom: 8px;">Online Courses</h2>
+                                <p class="services-text">Marketing</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="services-item" style="margin-right: 24px;">
+                        <a href="#" class="link">
+                            <img src="./images/portfolio/instagramstories.jpg" alt="Instagram Stories Concept" width="360">
+                            <div class="services-item-container"
+                                style="padding: 32px 16px; border: 1px solid #e7e9fc; border-top: none;">
+                                <h2 class="services-item-title" style="margin-bottom: 8px;">Instagram Stories Concept</h2>
+                                <p class="services-text">Design</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="services-item" style="margin-right: 24px;">
+                        <a href="#" class="link">
+                            <img src="./images/portfolio/organicfood.jpg" alt="Organic Food" width="360">
+                            <div class="services-item-container"
+                                style="padding: 32px 16px; border: 1px solid #e7e9fc; border-top: none;">
+                                <h2 class="services-item-title" style="margin-bottom: 8px;">Organic Food</h2>
+                                <p class="services-text">Web Site</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="services-item" style="margin-right: 24px;">
+                        <a href="#" class="link">
+                            <img src="./images/portfolio/freshcoffe.jpg" alt="Fresh Coffee" width="360">
+                            <div class="services-item-container"
+                                style="padding: 32px 16px; border: 1px solid #e7e9fc; border-top: none;">
+                                <h2 class="services-item-title" style="margin-bottom: 8px;">Fresh Coffee</h2>
+                                <p class="services-text">Web Site</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </main>
     <!--Footer section-->
     <footer class="footer">
-        <a class="portfolio-logo link" href="./index.html">Web
-            <span class="portfolio-studio">Studio</span>
-        </a>
-        <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing &
-            growth
-            solutions.</p>
+        <div class="footter conteiner">
+            <a class="footer-logo link" href="./index.html">Web
+                <span class="footer-studio">Studio</span>
+            </a>
+            <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing &
+                growth
+                solutions.</p>
+        </div>
     </footer>
 </body>
 
